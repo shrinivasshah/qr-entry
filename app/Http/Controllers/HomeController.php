@@ -8,6 +8,6 @@ class HomeController extends Controller
 {
   public function get()
   {
-    return view('auth.login');
+    return view('home');
   }
 }

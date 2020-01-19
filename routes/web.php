@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@get');
+Route::get('/home', 'HomeController@get')->name('home');
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('auth.login');
 Route::post('/login', 'Auth\LoginController@login');
 Route::get('/logout', 'Auth\LoginController@logout')->name('auth.logout');
