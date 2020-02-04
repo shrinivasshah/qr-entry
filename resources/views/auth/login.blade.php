@@ -14,7 +14,7 @@
               @csrf
               <div class="form-group @error('email') has-danger @enderror">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" placeholder="Enter email" name="email" value="{{old('email')}}">
+                <input type="text" class="form-control" placeholder="Enter email" name="email" value="{{old('email')}}">
               </div>
               <div class="form-group @error('password') has-danger @enderror">
                 <label for="password">Password</label>
