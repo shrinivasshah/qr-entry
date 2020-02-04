@@ -25,3 +25,5 @@ Route::post('/register', 'Auth\RegisterController@register');
 Route::get('/users', 'UserController@index')->name('users');
 Route::get('/users/add', 'UserController@add')->name('users.add');
 Route::post('/users/add', 'UserController@addPost');
+
+Route::get('/entry/{id}', 'EntryController@entry')->name('entry.make');

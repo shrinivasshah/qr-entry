@@ -8,7 +8,8 @@
       <div class="row justify-content-md-center">
         <div class="col-sm-5">
           <div class="text-center">
-            {!! QrCode::size(500)->generate(Auth::user()->id) !!}
+
+            {!! QrCode::size(500)->generate(route('entry.make',Auth::user()->id)) !!}
           </div>
         </div>
       </div>
