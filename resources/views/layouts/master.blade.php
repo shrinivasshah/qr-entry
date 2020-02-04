@@ -12,6 +12,7 @@
   @yield('css')
 </head>
 <body>
+  @include('layouts.nav')
   @yield('content')
   <script src="/js/jquery.min.js"></script>
   <script src="/js/popper.min.js"></script>

@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
   */
   public function run()
   {
-    $user = \App\User::create(['name'=>'admin', 'email'=>'admin', 'password' => bcrypt('admin')]);
+    $user = \App\User::create(['name'=>'admin', 'email'=>'admin', 'password' => bcrypt('admin'), 'role' => '0']);
     $user->save();
   }
 }
