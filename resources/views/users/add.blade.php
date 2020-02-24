@@ -12,11 +12,11 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
             <form action="{{route('users.add')}}" method="POST">
               @csrf
-              <div class="form-group @error('email') has-danger @enderror">
+              <div class="form-group @error('name') has-danger @enderror">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" placeholder="Enter name" name="email" value="{{old('name')}}">
+                <input type="text" class="form-control" placeholder="Enter name" name="name" value="{{old('name')}}">
               </div>
-              @error('email')
+              @error('name')
                 <div class="text-danger">{{ $message }}</div>
               @enderror
               <div class="form-group @error('email') has-danger @enderror">
