@@ -27,3 +27,4 @@ Route::get('/users/add', 'UserController@add')->name('users.add');
 Route::post('/users/add', 'UserController@addPost');
 
 Route::get('/entry/{id}', 'EntryController@entry')->name('entry.make');
+Route::get('/entries', 'EntryController@get')->name('entry');

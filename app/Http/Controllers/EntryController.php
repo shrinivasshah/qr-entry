@@ -9,6 +9,10 @@ use App\User;
 
 class EntryController extends Controller
 {
+  public function get()
+  {
+    return view('entry.index');
+  }
   public function entry($id)
   {
     $user = User::findOrFail($id);
