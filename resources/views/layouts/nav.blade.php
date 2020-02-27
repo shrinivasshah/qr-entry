@@ -9,8 +9,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-primary">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="{{route('users')}}">Users</a> </li>
-          <li class="nav-item"><a class="nav-link" href="{{route('entry')}}">Entries</a> </li>
+          @if (Auth::user()->isAdmin())
+            <li class="nav-item"><a class="nav-link" href="{{route('users')}}">Users</a> </li>
+            <li class="nav-item"><a class="nav-link" href="{{route('entry')}}">Entries</a> </li>
+          @endif
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton" href="#pk" role="button" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a>
             <ul class="dropdown-menu dropdown-info" aria-labelledby="dropdownMenuButton">
