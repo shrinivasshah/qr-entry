@@ -1,5 +1,8 @@
 <h1>Park It</h1>
 
+<h5>Group Members:- Shrinivas shah, Paritosh Patil, Pooja Shivale</h5>
+
+
 <p>
 Park It is a Smart Vehicle Authentication system for Societies It
 uses Computer vision to identify vehicles by using images from data
